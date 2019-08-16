@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { Goal } from '../quotes';
 import { Quotes } from '../quotes';
 
 @Component({
@@ -8,10 +7,12 @@ import { Quotes } from '../quotes';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
-  // quotes: Quote= [
+  quotes: Quotes[] = [
+    {id: 1, name: 'my favourite quote1', description: 'This is my first favourite quote', author: 'Paul1'},
+    {id: 2, name: 'My favourite quote2',  description: 'This is my first favourite quote', author: 'Paul1'},
+    {id: 3, name: 'My favourite quote3',  description: 'This is my first favourite quote', author: 'Paul1'},
 
-  // ]
-
+  ];
   constructor() { }
 
   ngOnInit() {

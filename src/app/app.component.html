@@ -1,17 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1 class="bg-success">
-    Welcome to {{ title }}!
-  </h1>
-  <div>
-    <ul>
-      <li *ngFor='let quote of quotes'>
-        {{quote}}
-      </li>
-    </ul>
+<div>
+  <div class="text-center">
+      <h1 class="bg-success text-align:center">
+          Welcome to {{ title }}!
+      </h1>
   </div>
- 
+
+
 </div>
+<app-quotes></app-quotes>
 <!-- <app-root></app-root> -->
 
 <router-outlet></router-outlet>
