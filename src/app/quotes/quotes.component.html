@@ -2,9 +2,9 @@
     <ul>
       <div *ngFor='let quote of quotes; let i = index'>
         <li>{{quote.name}} </li>
-       
-        <app-quote-details *ngIf='quote.showDescription' [quotes]='quote' ></app-quote-details>
         <button (click) = 'toggleQuotes(i)' class="btn btn-info">Toggle Quote</button>
+        <app-quote-details *ngIf='quote.showDescription' [quotes]='quote' (isNotTouching)='removeQuote($event,i)' ></app-quote-details>
+        
       </div>
     </ul>
   </div>

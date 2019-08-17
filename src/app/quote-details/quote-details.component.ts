@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 // import { Quote } from '@angular/compiler';
 
 import { Quotes } from '../quotes';
@@ -10,6 +10,10 @@ import { Quotes } from '../quotes';
 })
 export class QuoteDetailsComponent implements OnInit {
   @Input () quotes: Quotes;
+  @Output () isNotTouching = new EventEmitter<boolean>();
+  quoteRemove(untouching: boolean) {
+    this.isNotTouching.emit(untouching);
+  }
   constructor() { }
 
   ngOnInit() {
