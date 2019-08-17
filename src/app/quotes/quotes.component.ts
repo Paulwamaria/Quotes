@@ -7,10 +7,11 @@ import { Quotes } from '../quotes';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
+ 
   quotes: Quotes[] = [
     {id: 1, name: 'my favourite quote1', description: 'This is my first favourite quote', author: 'Paul1'},
-    {id: 2, name: 'My favourite quote2',  description: 'This is my first favourite quote', author: 'Paul1'},
-    {id: 3, name: 'My favourite quote3',  description: 'This is my first favourite quote', author: 'Paul1'},
+    {id: 2, name: 'My favourite quote2',  description: 'This is my second favourite quote', author: 'Paul1'},
+    {id: 3, name: 'My favourite quote3',  description: 'This is my third favourite quote', author: 'Paul1'},
   ];
   constructor() { }
 
