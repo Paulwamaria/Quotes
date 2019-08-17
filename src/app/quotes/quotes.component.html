@@ -1,9 +1,9 @@
 <div>
     <ul>
       <div *ngFor='let quote of quotes; let i = index'>
-        <li>{{quote.name}} </li>
+        <li>{{quote.name}} submited on {{quote.submitDate|date}} </li>
         <button (click) = 'toggleQuotes(i)' class="btn btn-info">Toggle Quote</button>
-        <app-quote-details *ngIf='quote.showDescription' [quotes]='quote' (isNotTouching)='removeQuote($event,i)' ></app-quote-details>
+        <app-quote-details *ngIf='quote.showDescription' [quotes]='quote' (isNotTouching)='removeQuote($event,i)' (isTouching)='voteUp($event, i)' ></app-quote-details>
         
       </div>
     </ul>

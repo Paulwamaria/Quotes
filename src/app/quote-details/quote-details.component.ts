@@ -11,6 +11,10 @@ import { Quotes } from '../quotes';
 export class QuoteDetailsComponent implements OnInit {
   @Input () quotes: Quotes;
   @Output () isNotTouching = new EventEmitter<boolean>();
+  @Output () isTouching = new EventEmitter<boolean>();
+  updateVote(touching: boolean) {
+    this.isTouching.emit(touching);
+  }
   quoteRemove(untouching: boolean) {
     this.isNotTouching.emit(untouching);
   }
