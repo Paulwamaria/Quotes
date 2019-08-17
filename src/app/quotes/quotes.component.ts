@@ -11,7 +11,6 @@ export class QuotesComponent implements OnInit {
     {id: 1, name: 'my favourite quote1', description: 'This is my first favourite quote', author: 'Paul1'},
     {id: 2, name: 'My favourite quote2',  description: 'This is my first favourite quote', author: 'Paul1'},
     {id: 3, name: 'My favourite quote3',  description: 'This is my first favourite quote', author: 'Paul1'},
-
   ];
   constructor() { }
 
