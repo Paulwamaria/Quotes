@@ -9,9 +9,9 @@ import { Quotes } from '../quotes';
 export class QuotesComponent implements OnInit {
 
   quotes: Quotes[] = [
-    new Quotes( 1, 'my favourite quote1', 'This is my first favourite quote', 'Paul1', 0, 0, new Date(2019, 6, 30)),
-    new Quotes( 2, 'My favourite quote2', 'This is my second favourite quote', 'Paul2', 5, 0, new Date(2019, 7, 2)),
-    new Quotes( 3, 'My favourite quote3', 'This is my third favourite quote', 'Paul3', 0, 0, new Date(2019, 5, 10)),
+    new Quotes( 1, 'my favourite quote1', 'This is my first favourite quote', 'Paul1', 0, 0, 'Paul Wamaria', new Date(2019, 6, 30, 16)),
+    new Quotes( 2, 'My favourite quote2', 'This is my second favourite quote', 'Paul2', 5, 0, 'Kamau Paul', new Date(2019, 7, 2, 8)),
+    new Quotes( 3, 'My favourite quote3', 'This is my third favourite quote', 'Paul3', 0, 0, 'Wincott Paul', new Date(2019, 5, 10, 2)),
   ];
   // update votes
   // raiseVotes(isTouching: boolean, quotes.upVot: number) {

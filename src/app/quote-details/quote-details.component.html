@@ -1,11 +1,12 @@
 
-<div class="container-fluid">
-  <div class="row bg-success">
+<div class="container-fluid bg-dark text-white">
+  <div class="row ">
     <div class="col-md-3 card-body">
       <h3 class="text-center"> About Quote</h3>
         <blockquote class="text-center">
             {{quotes.description}}
         </blockquote>
+        {{quotes.submitDate|dateCount}}
     </div>
     <div class="col-md-2 pt-md-3">
       <h3 class="text-center">The Author</h3>
@@ -19,13 +20,16 @@
         <h3 class="text-center">Down-votes</h3>
         <p class="text-center"> {{quotes.downVot}}</p>
     </div>
-
+    <div class="col-md-2 pt-md-3">
+        <h3 class="text-center">Submited by</h3>
+        <p class="text-center"> {{quotes.submiterName}}</p>
+    </div>
    
   
     
   </div>
   
-  <button (click)= 'updateVote(true)' class="btn btn-success">Like</button>
-  <button (click)= 'updateVote(false)' class="btn btn-warning">Dislike</button>
-  <button (click)='quoteRemove(true)' class="btn btn-danger"> Remove Quote</button>
+  <button (click)= 'updateVote(true)' class="btn btn-success btn-default">Like</button>
+  <button (click)= 'updateVote(false)' class="btn btn-warning btn-default">Dislike</button>
+  <button (click)='quoteRemove(true)' class="btn btn-danger btn-default"> Remove Quote</button>
 </div>
