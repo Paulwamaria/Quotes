@@ -1,35 +1,39 @@
 
-<div class="container-fluid bg-dark text-white">
+<div class="container-fluid text-white">
   <div class="row ">
-    <div class="col-md-3 card-body">
-      <h3 class="text-center"> About Quote</h3>
-        <blockquote class="text-center">
-            {{quotes.description}}
-        </blockquote>
-        {{quotes.submitDate|dateCount}}
+    <div class="col-md-4 card-body">
+      <h3 class="text-center text-info">Submition history</h3>
+         {{quotes.submitDate|dateCount}}
     </div>
     <div class="col-md-2 pt-md-3">
-      <h3 class="text-center">The Author</h3>
-        <p class="text-center">{{quotes.authorName}}</p>
+      <h3 class="text-center text-info">Author</h3>
+        <p class="text-center mb-3">{{quotes.authorName}}</p>
     </div>
     <div class="col-md-2 pt-md-3">
-      <h3 class="text-center">Up-votes</h3>
-        <p class="text-center" > {{quotes.upVot}}</p>
+      <h3 class="text-center text-info">Likes</h3>
+        <p class="text-center mb-3" > {{quotes.upVot}}</p>
     </div>
     <div class="col-md-2 pt-md-3">
-        <h3 class="text-center">Down-votes</h3>
-        <p class="text-center"> {{quotes.downVot}}</p>
+        <h3 class="text-center text-info">Dislikes</h3>
+        <p class="text-center mb-3"> {{quotes.downVot}}</p>
     </div>
     <div class="col-md-2 pt-md-3">
-        <h3 class="text-center">Submited by</h3>
-        <p class="text-center"> {{quotes.submitterName}}</p>
+        <h3 class="text-center text-info">Submited by</h3>
+        <p class="text-center mb-3"> {{quotes.submitterName}}</p>
+    </div>
+    <div class="row about">
+      <div class="card-body">
+          <h3 class="text-center text-info"> About Quote</h3>
+        
+          {{quotes.description}}
+      </div>
     </div>
    
   
     
   </div>
   
-  <button (click)= 'updateVote(true)' class="btn btn-success btn-default">Like</button>
-  <button (click)= 'updateVote(false)' class="btn btn-warning btn-default">Dislike</button>
-  <button (click)='quoteRemove(true)' class="btn btn-danger btn-default"> Remove Quote</button>
+  <button (click)= 'updateVote(true)' class="btn btn-info btn-default ">Like</button>
+  <button (click)= 'updateVote(false)' class="btn btn-info btn-default ml-2">Dislike</button>
+  <button (click)='quoteRemove(true)' class="btn btn-info btn-default ml-2"> Remove Quote</button>
 </div>

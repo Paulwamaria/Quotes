@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { RouterModule, Routes} from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +12,13 @@ import { VoteCountPipe } from './vote-count.pipe';
 import { UpVoteDirective } from './up-vote.directive';
 import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+
+const routes: Routes = [
+  {path: '', component: LandingPageComponent},
+  {path: 'quotes', component: QuotesComponent},
+  {path: '**', redirectTo: ''}
+];
 
 @NgModule({
   declarations: [
@@ -19,12 +28,15 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
     VoteCountPipe,
     UpVoteDirective,
     DateCountPipe,
-    QuoteFormComponent
+    QuoteFormComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AngularFontAwesomeModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

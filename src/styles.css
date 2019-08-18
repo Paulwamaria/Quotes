@@ -1,2 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+  background-image:url('./assets/monkey.jpg');
+  background-size: cover;
+  background-position:center;
+  
+  }
 @import "~bootstrap/dist/css/bootstrap.css"
+

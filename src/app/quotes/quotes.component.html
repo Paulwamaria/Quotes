@@ -1,12 +1,15 @@
-<div class="container">
-  <hr>
+<div class="container  mt-5">
+
 
   <div class="row">
+
     <div class="col-md-8">
+        <h1 class="text-center mb-10 text-white">{{title}}</h1>
+        <hr>
         <ul>
             <div *ngFor='let quote of quotes; let i = index'>
-              <li>{{quote.name}} submited on {{quote.submitDate|date}} </li>
-              <button (click) = 'toggleQuotes(i)' class="btn btn-info">Toggle Quote</button>
+              <li class="text-white"><i class="fa fa-quote-left" aria-hidden="true"></i>{{quote.name}}<i class="fa fa-quote-right" aria-hidden="true"></i><br> Submited on {{quote.submitDate|date}} </li>
+              <button (click) = 'toggleQuotes(i)' class="btn btn-info mb-5">Quote Details</button>
               <app-quote-details *ngIf='quote.showDescription' [quotes]='quote' (isNotTouching)='removeQuote($event,i)' (isTouching)='voteUp($event, i)' ></app-quote-details>
               
             </div>
