@@ -1,11 +1,14 @@
 .container-fluid{
   height: 100vh;
   background-color: rgba(0,0,0,0.5);
+ 
+}
+.welcam{
   padding-top: calc(50vh - 150px);
 }
 .container-fluid h1{
   font-size: 80px;
 }
-.container-fluid a{
+.container-fluid a,p{
   font-size: 20px;
 }

@@ -2,23 +2,24 @@
 <div class="container-fluid text-white">
   <div class="row ">
     <div class="col-md-4 card-body">
-      <h3 class="text-center text-info">Submition history</h3>
-         {{quotes.submitDate|dateCount}}
+      <h4 class="text-center text-info">Submition history</h4>
+      <p class="mt-5">{{quotes.submitDate|dateCount}}</p>
+         
     </div>
     <div class="col-md-2 pt-md-3">
-      <h3 class="text-center text-info">Author</h3>
-        <p class="text-center mb-3">{{quotes.authorName}}</p>
+      <h4 class="text-center text-info">Author</h4>
+        <p class="text-center mb-3 mt-5">{{quotes.authorName}}</p>
     </div>
     <div class="col-md-2 pt-md-3">
-      <h3 class="text-center text-info">Likes</h3>
-        <p class="text-center mb-3" > {{quotes.upVot}}</p>
+      <h4 class="text-center text-info">Likes</h4>
+        <p class="text-center mb-3 mt-5" > {{quotes.upVot}}</p>
     </div>
     <div class="col-md-2 pt-md-3">
-        <h3 class="text-center text-info">Dislikes</h3>
-        <p class="text-center mb-3"> {{quotes.downVot}}</p>
+        <h4 class="text-center text-info">Dislikes</h4>
+        <p class="text-center mb-3 mt-5"> {{quotes.downVot}}</p>
     </div>
     <div class="col-md-2 pt-md-3">
-        <h3 class="text-center text-info">Submited by</h3>
+        <h4 class="text-center text-info">Submited by</h4>
         <p class="text-center mb-3"> {{quotes.submitterName}}</p>
     </div>
     <div class="row about">
