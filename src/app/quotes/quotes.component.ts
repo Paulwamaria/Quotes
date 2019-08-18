@@ -13,6 +13,16 @@ export class QuotesComponent implements OnInit {
     new Quotes( 2, 'My favourite quote2', 'This is my second favourite quote', 'Paul2', 5, 0, 'Kamau Paul', new Date(2019, 7, 2, 8)),
     new Quotes( 3, 'My favourite quote3', 'This is my third favourite quote', 'Paul3', 0, 0, 'Wincott Paul', new Date(2019, 5, 10, 2)),
   ];
+  // add new quote function
+  addNewQuote(quote) {
+    let quotesLength = this.quotes.length;
+    quote.id = quotesLength + 1;
+    quote.submitDate = new Date (quote.submitDate);
+
+    quote.upVot = 0;
+    quote.downVot = 0;
+    this.quotes.push(quote);
+  }
   // update votes
   // raiseVotes(isTouching: boolean, quotes.upVot: number) {
   //  if (isTouching) {
