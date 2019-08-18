@@ -17,7 +17,7 @@ export class DateCountPipe implements PipeTransform {
     
     var dateCounter = Math.floor(expiredTimeInSeconds / secondsInDay);
     var extraTimeInHours = (expiredTimeInSeconds % secondsInDay) / secondsInHour;
-    var realExpiredTime: any = 'It\'s been ' + dateCounter + (' days,' + extraTimeInHours + ' hours since the quote was submitted.');
+    var realExpiredTime: any = 'It\'s been ' + dateCounter + (' days and ' + extraTimeInHours + ' hours since the quote was submitted.');
     return realExpiredTime;
   }
 

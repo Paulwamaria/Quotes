@@ -1,0 +1,39 @@
+
+<div class= "container-fluid">
+  <h2 class="text-center">Create a new quote</h2>
+  <hr>
+  <form #quoteform='ngForm'>
+    <div class="form-group">
+      <label for="submiterName">Your Name</label>
+      <input type="text" name='submiterName' required [(ngModel)]='newQuote.submiterName' id= "submiterName" class="form-control">
+      Display{{newQuote.submiterName}}
+    </div>
+    <div class="form-group">
+      <label for="authorName">Author's Name</label>
+      <input type="text" class= "form-control" id="authorName" name= "authorName" required [(ngModel)]='newQuote.authorName'>
+    </div>
+    Display{{newQuote.authorName}}
+    <!-- <div class= "form-group">
+      <label for="quoteTitle">Quote Title</label>
+      <input type="text" id ="quoteTitle" name="quoteTitle" required class="form-control" [(ngModel)]='newQuote.quoteTitle'>
+    </div> -->
+    <div class="form-group">
+      <label for="name" >The Quote</label>
+      <input type="text" id="name" name= "name" required class= "form-control" [(ngModel)]='newQuote.name'>
+      Display{{newQuote.name}}
+    </div>
+    <div class="form-group">
+      <label for="description">About Quote</label>
+      <input type="textarea" id="description" class="form-control" name="description" required [(ngModel)]='newQuote.description'>
+      Display{{newQuote.description}}
+    </div>
+    <div class="form-group">
+      <label for="submitDate">Submision Daate</label>
+      <input type="date" class="form-control" id="submitDate" name="submitDate"required [(ngModel)]='newQuote.submitDate'>
+      Display{{newQuote.submitDate}}
+    </div>
+    <button type="submit" class="btn btn-success">Add Quote</button>
+    
+  
+  </form>
+</div>

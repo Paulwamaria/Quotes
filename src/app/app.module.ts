@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,7 @@ import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { VoteCountPipe } from './vote-count.pipe';
 import { UpVoteDirective } from './up-vote.directive';
 import { DateCountPipe } from './date-count.pipe';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { DateCountPipe } from './date-count.pipe';
     QuoteDetailsComponent,
     VoteCountPipe,
     UpVoteDirective,
-    DateCountPipe
+    DateCountPipe,
+    QuoteFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
