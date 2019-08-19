@@ -8,6 +8,8 @@ The user inputs their favourite quotes and adds the name of the author as well a
 
 ##Deployment link
 
+##license
+Copyright (c) 2019 Paulwamaria
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
