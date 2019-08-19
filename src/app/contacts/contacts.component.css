@@ -1,0 +1,9 @@
+.contacts{
+  height:100vh;
+  padding-top:calc(50vh - 60px);
+}
+.contacts a{
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  color:white;
+}

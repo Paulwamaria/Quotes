@@ -13,11 +13,14 @@ import { UpVoteDirective } from './up-vote.directive';
 import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { HighlightDirective } from './highlight.directive';
+import { ContactsComponent } from './contacts/contacts.component';
 
 const routes: Routes = [
   {path: '', component: LandingPageComponent},
   {path: 'quotes', component: QuotesComponent},
-  {path: '**', redirectTo: ''}
+  {path: 'contacts', component: ContactsComponent},
+  // {path: '**', redirectTo: ''}
 ];
 
 @NgModule({
@@ -29,7 +32,9 @@ const routes: Routes = [
     UpVoteDirective,
     DateCountPipe,
     QuoteFormComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    HighlightDirective,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,

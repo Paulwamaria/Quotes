@@ -18,9 +18,9 @@ export class QuoteDetailsComponent implements OnInit {
   quoteRemove(untouching: boolean) {
     this.isNotTouching.emit(untouching);
   }
-  constructor() { }
+    constructor() {}
 
-  ngOnInit() {
+    ngOnInit() {
+
+    }
   }
-
-}

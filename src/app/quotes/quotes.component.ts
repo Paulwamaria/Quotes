@@ -52,6 +52,7 @@ export class QuotesComponent implements OnInit {
     quote.downVot = 0;
     this.quotes.push(quote);
   }
+
   // update votes
   // raiseVotes(isTouching: boolean, quotes.upVot: number) {
   //  if (isTouching) {
@@ -67,7 +68,7 @@ export class QuotesComponent implements OnInit {
       // votesUp += this.quotes[index].upVot;
 
     } else {
-      this.quotes[index].downVot -= 1;
+      this.quotes[index].downVot += 1;
       // votesDown -= this.quotes[index].downVot;
     }
   }
@@ -82,6 +83,7 @@ export class QuotesComponent implements OnInit {
         this.quotes.splice(index, 1);
       }
     }
+      // filter the highest upvot
 
   }
  
