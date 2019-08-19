@@ -1,5 +1,5 @@
 # Quotes
-Quotes is a web application that tracks favourite quotes. The application displays some quotes and also allows the user to add their favourite quotes, the author of the quotes and the name of the person who submited. The user can also upvote or down vote a quote depending on how touched they feel by the quote.
+Quotes is a web application that tracks favourite quotes. The application displays some quotes and also allows the user to add their favourite quotes, the author of the quotes and the name of the person who submited. The user can also upvote or down vote a quote depending on how touched they feel by the quote. https://paulwamaria.github.io/Quotes/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.1.
 
@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 The user inputs their favourite quotes and adds the name of the author as well as their names. The user then clicks the add quotes button to add the quote to the list. If the user wants to vote, they can click on the upvote or the down vote button. The application highlights the quote with the highest upvote in green and the quote with the highest downvote in orange.
 
 ##Deployment link
-
+https://paulwamaria.github.io/Quotes/
 ##license
 Copyright (c) 2019 Paulwamaria
 ## Development server
