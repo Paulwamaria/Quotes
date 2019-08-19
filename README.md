@@ -7,8 +7,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 The user inputs their favourite quotes and adds the name of the author as well as their names. The user then clicks the add quotes button to add the quote to the list. If the user wants to vote, they can click on the upvote or the down vote button. The application highlights the quote with the highest upvote in green and the quote with the highest downvote in orange.
 
 ##Deployment link
+
+
 https://paulwamaria.github.io/Quotes/
+
+
 ##license
+
 Copyright (c) 2019 Paulwamaria
 ## Development server
 

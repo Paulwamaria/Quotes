@@ -1,0 +1,77 @@
+[33mcommit 3126795f241c7bd0598527f587d7d4bf90c86266[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Paulwamaria <paulwamaria@gmail.com>
+Date:   Mon Aug 19 10:13:38 2019 +0300
+
+    Add a live link to README.md
+
+[33mcommit f9a64dd3ed8977bf7f0b0af55cf4f12ece1d8ad1[m
+Author: Paulwamaria <paulwamaria@gmail.com>
+Date:   Mon Aug 19 10:10:35 2019 +0300
+
+    Add license details
+
+[33mcommit fa3c72439d0489f4b9e5d17a5d034e7a854c955c[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Paulwamaria <paulwamaria@gmail.com>
+Date:   Mon Aug 19 08:26:17 2019 +0300
+
+    Add more styles
+
+[33mcommit 802e6e3c1b5ad4c4bffff91eda8e808d5eafc6a0[m
+Author: Paulwamaria <paulwamaria@gmail.com>
+Date:   Sun Aug 18 22:16:54 2019 +0300
+
+    Add navigation
+
+[33mcommit 8dd4ee9180f488a9b41e459a91ee21caca7927d7[m
+Author: Paulwamaria <paulwamaria@gmail.com>
+Date:   Sun Aug 18 20:44:42 2019 +0300
+
+    Create a landing page
+
+[33mcommit d44f8b6281e2c5b9d95485bbbdf20059ef7c77c5[m
+Author: Paulwamaria <paulwamaria@gmail.com>
+Date:   Sun Aug 18 11:31:44 2019 +0300
+
+    Complete the form to be able to add a new quote
+
+[33mcommit 3ca864282d738eefbf7b406e4ec39669c4d08823[m
+Author: Paulwamaria <paulwamaria@gmail.com>
+Date:   Sun Aug 18 10:41:10 2019 +0300
+
+    Add form validation
+
+[33mcommit 60ca75896e328a71758fc9f7cbb0df76da6b9ad7[m
+Author: Paulwamaria <paulwamaria@gmail.com>
+Date:   Sun Aug 18 10:08:33 2019 +0300
+
+    Create a form to collect details for a new quote
+
+[33mcommit 0dbc85e222360e68d198d0109192f0f9fe4f0a29[m
+Author: Paulwamaria <paulwamaria@gmail.com>
+Date:   Sun Aug 18 06:33:15 2019 +0300
+
+    Create a dateCount pipe that calculates the time expired since the quote was submited.
+
+[33mcommit 2f8cf444cf4faae0a30e992d64b615b42b831b6a[m
+Author: Paulwamaria <paulwamaria@gmail.com>
+Date:   Sat Aug 17 20:30:04 2019 +0300
+
+    Add like and Dislike buttons and bind them to their respective funtionality
+
+[33mcommit 728d09f3bbe9dd4ca276383b54a1012aef485675[m
+Author: Paulwamaria <paulwamaria@gmail.com>
+Date:   Sat Aug 17 08:35:12 2019 +0300
+
+    Add the ability to delete quotes
+
+[33mcommit b91e47f8ed3429d24ffed49a7b60300e56027ac0[m
+Author: Paulwamaria <paulwamaria@gmail.com>
+Date:   Sat Aug 17 07:22:58 2019 +0300
+
+    Create a toggle effect for the quote
+
+[33mcommit 23d8d0a63131b234948d4973fc9ebc2b9e179952[m
+Author: Paulwamaria <paulwamaria@gmail.com>
+Date:   Sat Aug 17 05:27:43 2019 +0300
+
+    Add a quote constructor
