@@ -1,40 +1,73 @@
-# Quotes
-Quotes is a web application that tracks favourite quotes. The application displays some quotes and also allows the user to add their favourite quotes, the author of the quotes and the name of the person who submited. The user can also upvote or down vote a quote depending on how touched they feel by the quote. https://paulwamaria.github.io/Quotes/
+# Favorite Quotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.1.
+Favorite Quotes is an Angular app for collecting, browsing, and voting on motivational quotes. Users can add a quote, include author and submitter details, view quote metadata, and like or dislike quotes.
 
-##How the app work
-The user inputs their favourite quotes and adds the name of the author as well as their names. The user then clicks the add quotes button to add the quote to the list. If the user wants to vote, they can click on the upvote or the down vote button. The application highlights the quote with the highest upvote in green and the quote with the highest downvote in orange.
+>> A Moringa School simple coursework project
 
-##Deployment link
+![Quotes page screenshot](docs/images/quotes-page.png)
 
+## Features
 
-https://paulwamaria.github.io/Quotes/
+- Browse a seeded list of favorite quotes.
+- Add a new quote with author, submitter, description, and submission date.
+- View extra details for each quote.
+- Like, dislike, and remove quotes.
+- Navigate between Home, Quotes, and Contacts pages.
 
+## Tech Stack
 
-##license
+- Angular 21
+- TypeScript 5.9
+- Bootstrap 4
+- Font Awesome
+- Karma and Jasmine for tests
 
-Copyright (c) 2019 Paulwamaria
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Install dependencies:
 
-## Code scaffolding
+```bash
+npm install
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Start the development server:
+
+```bash
+npm start
+```
+
+Open `http://localhost:4200/` in your browser.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Create a production build:
 
-## Running unit tests
+```bash
+npm run build
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The build output is written to `dist/`.
 
-## Running end-to-end tests
+## Tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run unit tests:
 
-## Further help
+```bash
+npm test
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+For a headless Chromium run, use:
+
+```bash
+CHROME_BIN=chromium-browser npm test -- --watch=false --browsers=ChromeHeadless
+```
+
+## Deployment
+
+Live site:
+
+https://paulwamaria.github.io/Quotes/
+
+## License
+
+Copyright (c) 2019 Paulwamaria

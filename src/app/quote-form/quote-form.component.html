@@ -7,35 +7,35 @@
       <label for="submitterName" class="text-white">Your Name</label>
       <input type="text" name="submitterName" required [(ngModel)]="newQuote.submitterName" id="submitterName" class="form-control" #submitterName="ngModel">
     
-      <div [hidden]="submitterName.valid || submitterName.pristine" class="invalid-feedback d-block">
+      <div *ngIf="submitterName.invalid && (submitterName.touched || quoteForm.submitted)" class="invalid-feedback d-block">
         Your name as the submitter is required
       </div>
     </div>
     <div class="form-group">
       <label for="authorName" class="text-white">Author's Name</label>
       <input type="text" class="form-control" id="authorName" name="authorName" required [(ngModel)]="newQuote.authorName" #authorName="ngModel">
-      <div [hidden]="authorName.valid || authorName.pristine" class="invalid-feedback d-block">
+      <div *ngIf="authorName.invalid && (authorName.touched || quoteForm.submitted)" class="invalid-feedback d-block">
         Author's name is required
       </div>
     </div>
     <div class="form-group">
       <label for="name" class="text-white">The Quote</label>
       <input type="text" id="name" name="name" required class="form-control" [(ngModel)]="newQuote.name" #quoteName="ngModel">
-      <div [hidden]="quoteName.valid || quoteName.pristine" class="invalid-feedback d-block">
+      <div *ngIf="quoteName.invalid && (quoteName.touched || quoteForm.submitted)" class="invalid-feedback d-block">
         This field is required
       </div>
     </div>
     <div class="form-group">
       <label for="description" class="text-white">About Quote</label>
       <textarea id="description" class="form-control" name="description" required [(ngModel)]="newQuote.description" #quoteDescription="ngModel"></textarea>
-      <div [hidden]="quoteDescription.valid || quoteDescription.pristine" class="invalid-feedback d-block">
+      <div *ngIf="quoteDescription.invalid && (quoteDescription.touched || quoteForm.submitted)" class="invalid-feedback d-block">
         A short description is required
       </div>
     </div>
     <div class="form-group">
     <label for="submitDate" class="text-white">Submission Date</label>
       <input type="date" class="form-control" id="submitDate" name="submitDate" required [(ngModel)]="newQuote.submitDate" #submitDate="ngModel">
-      <div [hidden]="submitDate.valid || submitDate.pristine" class="invalid-feedback d-block">
+      <div *ngIf="submitDate.invalid && (submitDate.touched || quoteForm.submitted)" class="invalid-feedback d-block">
         Enter today's date for this field
       </div>
     </div>
