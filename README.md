@@ -33,7 +33,7 @@ npm install
 Start the development server:
 
 ```bash
-npm start
+ng serve
 ```
 
 Open `http://localhost:4200/` in your browser.
@@ -43,7 +43,7 @@ Open `http://localhost:4200/` in your browser.
 Create a production build:
 
 ```bash
-npm run build
+ng build
 ```
 
 The build output is written to `dist/`.
@@ -53,7 +53,7 @@ The build output is written to `dist/`.
 Run unit tests:
 
 ```bash
-npm test
+ng test
 ```
 
 For a headless Chromium run, use:
