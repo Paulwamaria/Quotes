@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   standalone: false
 })
 export class ContactsComponent implements OnInit {
-  title = 'helloemryon@gmail.com';
+  title = 'paulwamaria@gmail.com';
   constructor() { }
 
   ngOnInit() {
