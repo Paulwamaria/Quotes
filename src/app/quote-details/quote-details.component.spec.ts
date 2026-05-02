@@ -1,14 +1,16 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { DateCountPipe } from '../date-count.pipe';
+import { Quotes } from '../quotes';
 import { QuoteDetailsComponent } from './quote-details.component';
 
 describe('QuoteDetailsComponent', () => {
   let component: QuoteDetailsComponent;
   let fixture: ComponentFixture<QuoteDetailsComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ QuoteDetailsComponent ]
+      declarations: [ QuoteDetailsComponent, DateCountPipe ]
     })
     .compileComponents();
   }));
@@ -16,6 +18,7 @@ describe('QuoteDetailsComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(QuoteDetailsComponent);
     component = fixture.componentInstance;
+    component.quotes = new Quotes(1, 'Quote', 'Description', 'Author', 0, 0, 'Submitter', new Date());
     fixture.detectChanges();
   });
 

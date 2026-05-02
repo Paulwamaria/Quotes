@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { RouterModule, Routes} from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -40,7 +39,6 @@ const routes: Routes = [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    AngularFontAwesomeModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

@@ -4,7 +4,8 @@ import { Quotes } from '../quotes';
 @Component({
   selector: 'app-quote-form',
   templateUrl: './quote-form.component.html',
-  styleUrls: ['./quote-form.component.css']
+  styleUrls: ['./quote-form.component.css'],
+  standalone: false
 })
 export class QuoteFormComponent implements OnInit {
   newQuote = new Quotes( 0, '', '', '', 0, 0, '', new Date());

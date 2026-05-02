@@ -4,7 +4,8 @@ import { Quotes } from '../quotes';
 @Component({
   selector: 'app-quotes',
   templateUrl: './quotes.component.html',
-  styleUrls: ['./quotes.component.css']
+  styleUrls: ['./quotes.component.css'],
+  standalone: false
 })
 export class QuotesComponent implements OnInit {
   title = 'Favorite Quotes';

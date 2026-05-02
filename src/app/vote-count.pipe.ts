@@ -2,7 +2,8 @@ import { Pipe, PipeTransform, Component } from '@angular/core';
 import { Quotes } from './quotes';
 
 @Pipe({
-  name: 'voteCount'
+  name: 'voteCount',
+  standalone: false
 })
 export class VoteCountPipe implements PipeTransform {
 

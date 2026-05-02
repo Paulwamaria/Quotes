@@ -1,7 +1,8 @@
 import { Directive, ElementRef, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[appUpVote]'
+  selector: '[appUpVote]',
+  standalone: false
 })
 export class UpVoteDirective {
 

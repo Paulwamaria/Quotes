@@ -2,7 +2,8 @@ import { Directive, ElementRef } from '@angular/core';
 import { Quotes } from './quotes';
 
 @Directive({
-  selector: '[appHighlight]'
+  selector: '[appHighlight]',
+  standalone: false
 })
 export class HighlightDirective {
 

@@ -6,7 +6,8 @@ import { Quotes } from '../quotes';
 @Component({
   selector: 'app-quote-details',
   templateUrl: './quote-details.component.html',
-  styleUrls: ['./quote-details.component.css']
+  styleUrls: ['./quote-details.component.css'],
+  standalone: false
 })
 export class QuoteDetailsComponent implements OnInit {
   @Input () quotes: Quotes;

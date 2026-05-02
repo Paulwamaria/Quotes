@@ -1,14 +1,19 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
 
+import { DateCountPipe } from '../date-count.pipe';
+import { QuoteDetailsComponent } from '../quote-details/quote-details.component';
+import { QuoteFormComponent } from '../quote-form/quote-form.component';
 import { QuotesComponent } from './quotes.component';
 
 describe('QuotesComponent', () => {
   let component: QuotesComponent;
   let fixture: ComponentFixture<QuotesComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ QuotesComponent ]
+      imports: [ FormsModule ],
+      declarations: [ QuotesComponent, QuoteDetailsComponent, QuoteFormComponent, DateCountPipe ]
     })
     .compileComponents();
   }));
