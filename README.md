@@ -2,7 +2,7 @@
 
 Favorite Quotes is an Angular app for collecting, browsing, and voting on motivational quotes. Users can add a quote, include author and submitter details, view quote metadata, and like or dislike quotes.
 
->> A Moringa School simple coursework project
+>> A simple Moringa School coursework project
 
 ![Quotes page screenshot](docs/images/quotes-page.png)
 
