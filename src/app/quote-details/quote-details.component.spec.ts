@@ -1,7 +1,7 @@
 import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DateCountPipe } from '../date-count.pipe';
-import { Quotes } from '../quotes';
+import { Quote } from '../quote';
 import { QuoteDetailsComponent } from './quote-details.component';
 
 describe('QuoteDetailsComponent', () => {
@@ -18,7 +18,7 @@ describe('QuoteDetailsComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(QuoteDetailsComponent);
     component = fixture.componentInstance;
-    component.quotes = new Quotes(1, 'Quote', 'Description', 'Author', 0, 0, 'Submitter', new Date());
+    component.quote = new Quote(1, 'Quote', 'Description', 'Author', 0, 0, 'Submitter', new Date());
     fixture.detectChanges();
   });
 

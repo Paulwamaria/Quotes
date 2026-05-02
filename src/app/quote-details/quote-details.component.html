@@ -2,31 +2,31 @@
 <div class="container-fluid text-white">
   <div class="row ">
     <div class="col-md-4 card-body">
-      <h4 class="text-center text-info">Submition history</h4>
-      <p class="mt-5">{{quotes.submitDate|dateCount}}</p>
+      <h4 class="text-center text-info">Submission history</h4>
+      <p class="mt-5">{{quote.submitDate|dateCount}}</p>
          
     </div>
     <div class="col-md-2 pt-md-3">
       <h4 class="text-center text-info">Author</h4>
-        <p class="text-center mb-3 mt-5">{{quotes.authorName}}</p>
+        <p class="text-center mb-3 mt-5">{{quote.authorName}}</p>
     </div>
     <div class="col-md-2 pt-md-3">
       <h4 class="text-center text-info">Likes</h4>
-        <p class="text-center mb-3 mt-5" > {{quotes.upVot}}</p>
+        <p class="text-center mb-3 mt-5" > {{quote.upVot}}</p>
     </div>
     <div class="col-md-2 pt-md-3">
         <h4 class="text-center text-info">Dislikes</h4>
-        <p class="text-center mb-3 mt-5"> {{quotes.downVot}}</p>
+        <p class="text-center mb-3 mt-5"> {{quote.downVot}}</p>
     </div>
     <div class="col-md-2 pt-md-3">
-        <h4 class="text-center text-info">Submited by</h4>
-        <p class="text-center mb-3"> {{quotes.submitterName}}</p>
+        <h4 class="text-center text-info">Submitted by</h4>
+        <p class="text-center mb-3"> {{quote.submitterName}}</p>
     </div>
     <div class="row about">
       <div class="card-body">
           <h3 class="text-center text-info"> About Quote</h3>
         
-          {{quotes.description}}
+          {{quote.description}}
       </div>
     </div>
    
@@ -34,7 +34,7 @@
     
   </div>
   
-  <button (click)= 'updateVote(true)' class="btn btn-info btn-default ">Like</button>
-  <button (click)= 'updateVote(false)' class="btn btn-info btn-default ml-2">Dislike</button>
-  <button (click)='quoteRemove(true)' class="btn btn-info btn-default ml-2"> Remove Quote</button>
+  <button (click)="updateVote(true)" class="btn btn-info btn-default">Like</button>
+  <button (click)="updateVote(false)" class="btn btn-info btn-default ml-2">Dislike</button>
+  <button (click)="quoteRemove(true)" class="btn btn-info btn-default ml-2">Remove Quote</button>
 </div>

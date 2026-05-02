@@ -1,5 +1,4 @@
-import { Pipe, PipeTransform, Component } from '@angular/core';
-import { Quotes } from './quotes';
+import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'voteCount',
@@ -7,12 +6,7 @@ import { Quotes } from './quotes';
 })
 export class VoteCountPipe implements PipeTransform {
 
-  transform(value: any, isTouching: boolean): number {
-if (isTouching) {
-  return(value + 1);
-} else {
-  console.log( value);
-}
+  transform(value: number, isTouching: boolean): number {
+    return isTouching ? value + 1 : value;
   }
-
 }

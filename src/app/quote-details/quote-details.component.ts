@@ -1,7 +1,5 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-// import { Quote } from '@angular/compiler';
-
-import { Quotes } from '../quotes';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Quote } from '../quote';
 
 @Component({
   selector: 'app-quote-details',
@@ -9,19 +7,16 @@ import { Quotes } from '../quotes';
   styleUrls: ['./quote-details.component.css'],
   standalone: false
 })
-export class QuoteDetailsComponent implements OnInit {
-  @Input () quotes: Quotes;
-  @Output () isNotTouching = new EventEmitter<boolean>();
-  @Output () isTouching = new EventEmitter<boolean>();
-  updateVote(touching: boolean) {
+export class QuoteDetailsComponent {
+  @Input() quote: Quote;
+  @Output() isNotTouching = new EventEmitter<boolean>();
+  @Output() isTouching = new EventEmitter<boolean>();
+
+  updateVote(touching: boolean): void {
     this.isTouching.emit(touching);
   }
-  quoteRemove(untouching: boolean) {
+
+  quoteRemove(untouching: boolean): void {
     this.isNotTouching.emit(untouching);
   }
-    constructor() {}
-
-    ngOnInit() {
-
-    }
-  }
+}
