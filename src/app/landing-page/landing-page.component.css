@@ -1,14 +1,22 @@
-.container-fluid{
-  height: 100vh;
-  background-color: rgba(0,0,0,0.5);
- 
+.landing-page {
+  min-height: calc(100vh - 68px);
+  background-color: rgba(0, 0, 0, 0.38);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
 }
-.welcam{
-  padding-top: calc(50vh - 150px);
+
+.welcome {
+  max-width: 760px;
 }
-.container-fluid h1{
-  font-size: 80px;
+
+.landing-page h1 {
+  font-size: clamp(3rem, 7vw, 5rem);
+  font-weight: 700;
 }
-.container-fluid a,p{
+
+.landing-kicker {
   font-size: 20px;
+  margin-bottom: 1rem;
 }

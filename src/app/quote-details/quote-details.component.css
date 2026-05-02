@@ -1,12 +1,34 @@
-button{
-  width:22%;
-
+.quote-details {
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+  padding: 1rem;
 }
-.about{
-margin:auto;
-}
-.container-fluid{
-  background-color: rgba(0,0,0,0.7);
 
-  
+.detail-item {
+  margin-bottom: 1rem;
+}
+
+.detail-item h4,
+.about h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.detail-item p,
+.about p {
+  margin-bottom: 0;
+}
+
+.about {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 1rem;
+}
+
+.detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }

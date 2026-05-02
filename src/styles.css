@@ -1,8 +1,15 @@
-body{
-  background-image:url('./assets/monkey.jpg');
-  background-size: cover;
-  background-position:center;
-  
-  }
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
 
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(rgba(4, 12, 20, 0.62), rgba(4, 12, 20, 0.7)), url('./assets/monkey.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+a {
+  color: inherit;
+}

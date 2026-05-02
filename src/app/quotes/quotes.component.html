@@ -1,24 +1,24 @@
-<div class="container  mt-5">
-
-
+<div class="container quotes-page py-5">
   <div class="row">
-
     <div class="col-md-8">
-        <h1 class="text-center mb-10 text-white">{{title}}</h1>
-        <hr>
-        <ul>
-            <li *ngFor="let quote of quotes; let i = index" class="text-white mx-10">
-              <i class="fa fa-quote-left" aria-hidden="true"></i>{{quote.name}}<i class="fa fa-quote-right" aria-hidden="true"></i><br> Submitted on {{quote.submitDate|date}}
-              <br>
-              <button (click)="toggleQuotes(i)" class="btn btn-info mb-5">Quote Details</button>
-              <app-quote-details *ngIf="quote.showDescription" [quote]="quote" (isNotTouching)="removeQuote($event,i)" (isTouching)="voteUp($event, i)"></app-quote-details>
-            </li>
-          </ul>
+      <h1 class="text-white mb-4">{{title}}</h1>
+      <ul class="quote-list">
+        <li *ngFor="let quote of quotes; let i = index" class="quote-card text-white">
+          <p class="quote-text">
+            <i class="fa fa-quote-left" aria-hidden="true"></i>
+            {{quote.name}}
+            <i class="fa fa-quote-right" aria-hidden="true"></i>
+          </p>
+          <p class="quote-meta">Submitted on {{quote.submitDate | date}}</p>
+          <button (click)="toggleQuotes(i)" class="btn btn-outline-info btn-sm mb-3">
+            {{quote.showDescription ? 'Hide details' : 'Quote details'}}
+          </button>
+          <app-quote-details *ngIf="quote.showDescription" [quote]="quote" (isNotTouching)="removeQuote($event,i)" (isTouching)="voteUp($event, i)"></app-quote-details>
+        </li>
+      </ul>
     </div>
     <div class="col-md-4">
       <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
     </div>
-
   </div> 
 </div>
- 

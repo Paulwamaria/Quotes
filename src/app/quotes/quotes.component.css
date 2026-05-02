@@ -1,8 +1,33 @@
-.container{
-  background-color:rgba(0,0,0,0.5);
-
+.quotes-page {
+  background-color: rgba(0, 0, 0, 0.5);
 }
-ul{
-  list-style: none;
 
+.quote-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quote-card {
+  background: rgba(0, 0, 0, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1.25rem;
+}
+
+.quote-text {
+  font-size: 1.1rem;
+  line-height: 1.55;
+  margin-bottom: 0.75rem;
+}
+
+.quote-text .fa {
+  color: #17a2b8;
+  margin: 0 0.35rem;
+}
+
+.quote-meta {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.9rem;
 }

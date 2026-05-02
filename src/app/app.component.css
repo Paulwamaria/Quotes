@@ -1,0 +1,21 @@
+.app-nav {
+  background: rgba(0, 0, 0, 0.62);
+  padding: 0.85rem 1.5rem;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.nav-link {
+  border-bottom: 2px solid transparent;
+  margin-left: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.nav-link.active {
+  border-bottom-color: #17a2b8;
+  color: #fff;
+}

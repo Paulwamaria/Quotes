@@ -1,9 +1,33 @@
-.contacts{
-  height:100vh;
-  padding-top:calc(50vh - 60px);
+.contacts-page {
+  min-height: calc(100vh - 68px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
 }
-.contacts a{
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 30px;
-  color:white;
+
+.contacts {
+  background-color: rgba(0, 0, 0, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  display: grid;
+  gap: 1rem;
+  max-width: 520px;
+  padding: 2rem;
+  width: 100%;
+}
+
+.contacts a {
+  color: white;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.contacts a:hover {
+  color: #17a2b8;
+}
+
+.contacts .fa {
+  color: #17a2b8;
+  margin-right: 0.75rem;
 }

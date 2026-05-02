@@ -1,0 +1,20 @@
+.quote-form {
+  background: rgba(0, 0, 0, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.quote-form h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.92);
+}
+
+textarea.form-control {
+  min-height: 110px;
+}
