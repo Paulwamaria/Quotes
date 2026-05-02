@@ -6,12 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
-import { VoteCountPipe } from './vote-count.pipe';
-import { UpVoteDirective } from './up-vote.directive';
 import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { HighlightDirective } from './highlight.directive';
 import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
@@ -19,12 +16,9 @@ import { ContactsComponent } from './contacts/contacts.component';
     AppComponent,
     QuotesComponent,
     QuoteDetailsComponent,
-    VoteCountPipe,
-    UpVoteDirective,
     DateCountPipe,
     QuoteFormComponent,
     LandingPageComponent,
-    HighlightDirective,
     ContactsComponent
   ],
   imports: [
